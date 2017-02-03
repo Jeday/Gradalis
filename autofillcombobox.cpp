@@ -1,6 +1,6 @@
 #include "autofillcombobox.h"
 
-autoFillComboBox::autoFillComboBox(QComboBox *parent)
+autoFillComboBox::autoFillComboBox(QWidget *parent)
     : QComboBox(parent)
 {
     this->setEditable(true);

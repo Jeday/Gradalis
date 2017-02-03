@@ -3,7 +3,7 @@
 
 #include <QtWidgets>
 #include <QMainWindow>
-#include "customWidgets/autofillcombobox.h"
+#include "autofillcombobox.h"
 
 class mainWindow : public QMainWindow
 {
