@@ -5,7 +5,6 @@ autoFillComboBox::autoFillComboBox(QWidget *parent)
 {
     this->setEditable(true);
     setInsertPolicy(QComboBox::NoInsert);
-
     //connect(this,SIGNAL(editTextChanged(QString)),this,SLOT(addentry(QString)));
     //1000005
 
