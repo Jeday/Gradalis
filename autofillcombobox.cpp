@@ -1,11 +1,10 @@
 #include "autofillcombobox.h"
 
-autoFillComboBox::autoFillComboBox(QComboBox *parent)
+autoFillComboBox::autoFillComboBox(QWidget *parent)
     : QComboBox(parent)
 {
     this->setEditable(true);
     setInsertPolicy(QComboBox::NoInsert);
-
     //connect(this,SIGNAL(editTextChanged(QString)),this,SLOT(addentry(QString)));
     //1000005
 

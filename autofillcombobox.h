@@ -20,7 +20,7 @@ signals:
     void new_entry_added(QString);
 
 public:
-    autoFillComboBox(QComboBox *parent = 0);
+    autoFillComboBox(QWidget *parent = 0);
     ~autoFillComboBox();
 
     void add_entry(QString s);
