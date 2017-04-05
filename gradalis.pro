@@ -5,7 +5,8 @@
 #-------------------------------------------------
 
 QT       += core gui\
-            sql
+            sql \
+            network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -23,15 +24,33 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+#include(/home/je_day/Downloads/qt-solutions-master/qt-solutions-master/qtsoap/src/qtsoap.pri)
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-         autofillcombobox.cpp
+    editclients.cpp \
+    editchecks.cpp \
+    debug_windget.cpp \
+    edit_dialog.cpp \
+    edit_items.cpp
 
 HEADERS  += mainwindow.h \
-    autofillcombobox.h
+    editclients.h \
+    editchecks.h \
+    main_head.h \
+    debug_windget.h \
+    edit_dialog.h \
+    edit_items.h \
+    models.h
 
-win32: LIBS += -L$$PWD/../../../../postgres32/lib/ -llibpq
+#INCLUDEPATH += \
+#    "C:\postgres32\include"
 
-INCLUDEPATH += $$PWD/../../../../postgres32/include
-DEPENDPATH += $$PWD/../../../../postgres32/include
+#LIBS += \
+# "C:\postgres32\lib\libpq.lib"
+
+DISTFILES +=
+
+RESOURCES += \
+    res.qrc
+
