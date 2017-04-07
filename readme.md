@@ -27,6 +27,8 @@
     
     #LIBS += \
     # "C:\postgres32\lib\libpq.lib"
+```
+
 
 В свойствах проекта также нужно добавить в `PATH:` пути до `/include/` и `/bin/` инсталляции PostgreSQL
 
