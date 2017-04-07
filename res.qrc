@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/files">
         <file>quer.sql</file>
+        <file>icon_big.ico</file>
     </qresource>
 </RCC>
